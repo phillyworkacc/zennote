@@ -1,0 +1,61 @@
+.todo {
+   background-color: #1d1d1d;
+   color: #fff;
+   padding: 1rem;
+   border-radius: 12px;
+   box-shadow: 0 2px 4px rgba(20, 20, 20, 0.671);
+   border: 1px solid #292929;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   position: relative;
+   user-select: none;
+}
+
+@media screen and (min-width: 900px) {
+   .todo:hover { background-color: #202020; cursor: pointer; }
+}
+
+.todo .todo-text { line-height: 1.4rem; padding: 4px 0; }
+
+.todo .category {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 0.8rem;
+}
+
+.todo .category .category-tag, .color-tag {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   padding: 5px 12px;
+   border-radius: 7px;
+   background-color: #2e2e2e;
+}
+
+.todo .category .category-tag { padding-left: 8px; }
+.todo .category .category-tag span:first-child { font-size: 0.8rem; }
+
+.todo .category .color-tag .color {
+   height: 15px;
+   aspect-ratio: 1;
+   border-radius: 5px;
+   border: 1px solid #353535;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.todo .category .color-tag .color.green { background-color: #4CAF50; }
+.todo .category .color-tag .color.red { background-color: #F44336; }
+.todo .category .color-tag .color.orange { background-color: #FFC107; }
+
+.todo .time {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 15px;
+}

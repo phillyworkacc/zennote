@@ -1,0 +1,34 @@
+.todo-metrics {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0;
+}
+
+.tags {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 15px 0;
+   gap: 15px;
+}
+
+.tags .tag {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+.tags .tag .color {
+   height: 18px;
+   aspect-ratio: 1;
+   border-radius: 5px;
+   border: 1px solid #353535;
+}
+
+.tags .tag .color.green { background-color: #4CAF50; }
+.tags .tag .color.red { background-color: #F44336; }
+.tags .tag .color.orange { background-color: #FFC107; }

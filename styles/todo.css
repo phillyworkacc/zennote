@@ -1,0 +1,81 @@
+.todo-action-buttons {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 10px;
+   padding: 0 10px;
+   margin: 20px 0;
+}
+
+.todo-action-buttons button {
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+}
+
+.todo-action-buttons button.color-edit {
+   color: #ffb429;
+}
+
+.todo-action-buttons button.color-copy {
+   color: #45d329;
+}
+
+.todo-action-buttons button.color-delete {
+   color: #ff3535;
+}
+
+.todo-action-buttons button.complete {
+   padding: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 7px;
+   background-color: #2d9917;
+   color: white;
+}
+
+.todo-category-color .category-tag, .color-tag {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   padding: 5px 12px;
+   border-radius: 7px;
+   background-color: #2e2e2e;
+}
+
+.todo-category-color .category-tag { padding-left: 8px; }
+.todo-category-color .category-tag span:first-child { font-size: 0.8rem; }
+
+.todo-category-color .color-tag .color {
+   height: 15px;
+   aspect-ratio: 1;
+   border-radius: 5px;
+   border: 1px solid #353535;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.todo-category-color .color-tag .color.green { background-color: #4CAF50; }
+.todo-category-color .color-tag .color.red { background-color: #F44336; }
+.todo-category-color .color-tag .color.orange { background-color: #FFC107; }
+
+
+textarea.edit-todo-textarea {
+   font-family: "Inter";
+   line-height: 1.7rem;
+   width: 100%;
+   border: none;
+   outline: none;
+   color: #ededed;
+   font-size: 1rem;
+   background-color: #1d1d1d;
+   resize: none;
+   min-height: 70vh;
+   height: fit-content;
+}

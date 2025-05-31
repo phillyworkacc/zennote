@@ -1,0 +1,53 @@
+.todos-list {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 10px;
+}
+
+.category .category-tag, .color-tag {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   padding: 5px 12px;
+   border-radius: 7px;
+   background-color: #2e2e2e;
+   border: 2px solid #2e2e2e;
+   cursor: pointer;
+}
+
+.category .category-tag.selected, .color-tag.selected {
+   border: 2px solid #4CAF50;
+}
+
+.category .category-tag { padding-left: 8px; }
+.category .category-tag span:first-child { font-size: 0.8rem; }
+
+.category .color-tag .color {
+   height: 15px;
+   aspect-ratio: 1;
+   border-radius: 5px;
+   border: 1px solid #353535;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.category .color-tag .color.green { background-color: #4CAF50; }
+.category .color-tag .color.red { background-color: #F44336; }
+.category .color-tag .color.orange { background-color: #FFC107; }
+
+.completed-color-tag .color {
+   height: 15px;
+   aspect-ratio: 1;
+   border-radius: 5px;
+   border: 1px solid #353535;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.completed-color-tag .color.green { background-color: #4CAF50; }
+.completed-color-tag .color.red { background-color: #F44336; }

@@ -47,7 +47,10 @@ export default function HomePage () {
             </div>
 
             <div className="todos-list">
-               {todos.map((todo, index) => {
+               {todos
+               .filter(todo => todo.completed == false)
+               .slice(0,3)
+               .map((todo, index) => {
                   return <Todo key={index} todo={todo} />
                })}
             </div>
